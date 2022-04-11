@@ -1,0 +1,55 @@
+:root {
+    --white: #EDF5E1;
+    --light: #8EE4AF;
+    --mid: #5CDB95;
+    --dark: #379683;
+    --black: #05386B;
+    --line-height: 5px;
+    background-color: var(--white);
+}
+
+header {
+    margin-left: 1%;
+}
+
+h2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    text-decoration: underline;
+}
+
+div {
+    margin: 2%;
+}
+
+.above {
+    border: 2px;
+    width: 95%;
+    height: var(--line-height);
+    background:
+        linear-gradient(to bottom left, var(--white) 50%, transparent 50%)
+        100% 0/var(--line-height) var(--line-height),
+        linear-gradient(to bottom right, var(--white) 50%,transparent 50%)
+        0 0/var(--line-height) var(--line-height),
+        var(--black);
+    background-repeat: no-repeat;
+}
+
+.below {
+    border: 2px;
+    width: 95%;
+    height: var(--line-height);
+    background:
+        linear-gradient(to top left, var(--white) 50%, transparent 50%)
+        100% 0/var(--line-height) var(--line-height),
+        linear-gradient(to top right, var(--white) 50%,transparent 50%)
+        0 0/var(--line-height) var(--line-height),
+        var(--black);
+    background-repeat: no-repeat;
+}
+
+.plain {
+    width: 85%;
+}

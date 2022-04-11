@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tips and Tricks Sheet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>------ <u>My tips and tricks sheet</u> --</h1>
+    </header>
+
+    <hr class="above">
+    <h2>HTML</h2>
+    <hr class="below">
+
+
+    <hr class="above">
+    <h2>CSS</h2>
+    <hr class="below">
+
+    <div>
+        <p>To set rem measurements cleaner</p>
+        <code>
+            html {
+            <br>font-size: 62.5%;
+            <br>}
+        </code>
+    </div>
+
+    <hr class="plain">
+
+    <div>
+        <p>Code to make the edges of the CSS go to the edges of the page. You can also stick font family and all other page-wide code in here.
+        <br>The asterisk is a universal… indicator? That’s not right. But it’s a universal thingy
+        <br>Edit: it’s a universal selector apparently</p>
+        <code>
+            * {
+            <br>margin: 0;
+            <br>padding: 0;
+            <br>}
+        </code>
+    </div>
+
+    <hr class="plain">
+
+    <div>
+        <p>For designating text sizes, instead of using the common “size scale” with animal names as variables for the text size in order of the animals’ own size
+        <br>Instead have text sizes by animal name, but ordered alphabetically instead
+        <br>Start with maybe “cat”, “mouse”, “spider”, for small, medium, large text
+        <br>Then if I need a new one between small and medium, maybe put “horse” in there, halfway alphabetically between “cat” and “mouse”
+        <br>Takes a moment to think about initially, but if you’ve got a mole, a mouse, and a muskrat, it’s a heck of a lot easier to know their alphabetical order than their size order</p>
+        <code>
+            :root {
+            <br>--cat: 12px;
+            <br>--mouse: 18px;
+            <br>--spider: 24px;
+            <br>}
+        </code>
+    </div>
+
+    <hr class="plain">
+
+    <div>
+        <p>How to make those horizontal rules with diagonal ends</p>
+        <code>
+            hr {
+            <br>border: none;
+            <br>width: 45%;
+            <br>height: var(--line-height);
+            <br>margin: 2% 0 0 0;
+            <br>background:
+            <br>linear-gradient(to top left, var(--white) 50%, transparent 50%)
+            <br>100% 0/var(--line-height) var(--line-height),
+            <br>linear-gradient(to top right, var(--white) 50%,transparent 50%)
+            <br>0 0/var(--line-height) var(--line-height),
+            <br>var(--orange);
+            <br>background-repeat: no-repeat;
+            <br>}
+        </code>
+    </div>
+
+
+    <hr class="above">
+    <h2>Javascript</h2>
+    <hr class="below">
+
+    <div>
+        <p>To sort an array of numbers into ascending order</p>
+        <code>
+            array.sort((a,b) => a-b);
+        </code>
+    </div>
+
+
+    
+    <footer>
+        <hr style="margin-top: 5%;">
+        <p>Colour scheme: Grosse Lantern by Akufen</p>
+    </footer>
+
+</body>
+
+
+</html>
